@@ -24,8 +24,8 @@ private val AppShapes = Shapes(
 
 private val DarkColorScheme = darkColorScheme(
     primary = AppPrimaryBlue,
-    secondary = ZeptoPink,
-    tertiary = ZeptoGreen,
+    secondary = AccentPink,
+    tertiary = AccentGreen,
     background = Color(0xFF121212),
     surface = Color(0xFF1E1E1E),
     surfaceVariant = Color(0xFF2C2C2C),
@@ -40,25 +40,25 @@ private val DarkColorScheme = darkColorScheme(
 
 private val LightColorScheme = lightColorScheme(
     primary = AppPrimaryBlue,
-    secondary = ZeptoPink,
-    tertiary = ZeptoGreen,
-    background = Color.White,
+    secondary = AccentPink,
+    tertiary = AccentGreen,
+    background = Color(0xFFF8F9FA),
     surface = Color.White,
-    surfaceVariant = Color(0xFFF5F5F5),
+    surfaceVariant = Color(0xFFF1F3F4),
     onPrimary = Color.White,
     onSecondary = Color.White,
     onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    onSurfaceVariant = Color(0xFF49454F),
-    outline = Color(0xFF79747E),
+    onBackground = Color(0xFF1F1F1F),
+    onSurface = Color(0xFF1F1F1F),
+    onSurfaceVariant = Color(0xFF5F6368),
+    outline = Color(0xFFE0E0E0),
     secondaryContainer = AppLightBlue,
     onSecondaryContainer = AppPrimaryBlue
 )
 
 @Composable
 fun MyApplicationTheme(
-    darkTheme: Boolean = true, // Default to Dark Mode
+    darkTheme: Boolean = false, // Changed to Light Mode by default
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = false, // Disable dynamic color to maintain branding
     content: @Composable () -> Unit

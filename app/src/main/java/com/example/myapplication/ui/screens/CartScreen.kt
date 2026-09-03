@@ -248,23 +248,23 @@ fun LoyaltyRedeemSection(usePoints: Boolean, onToggle: (Boolean) -> Unit) {
     Surface(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(12.dp),
-        color = Color(0xFF3E2723).copy(alpha = 0.5f), // Darker amber/brown for dark mode
-        border = BorderStroke(1.dp, Color(0xFFFFD54F).copy(alpha = 0.5f))
+        color = Color(0xFFFFF8E1),
+        border = BorderStroke(1.dp, Color(0xFFFFD54F))
     ) {
         Row(
             modifier = Modifier.padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Icon(Icons.Default.Star, contentDescription = null, tint = Color(0xFFFFD54F))
+            Icon(Icons.Default.Star, contentDescription = null, tint = Color(0xFFFFA000))
             Spacer(modifier = Modifier.width(12.dp))
             Column(modifier = Modifier.weight(1f)) {
-                Text(stringResource(R.string.redeem_loyalty_points, 500), fontWeight = FontWeight.Bold, style = MaterialTheme.typography.bodyMedium, color = Color(0xFFFFD54F))
-                Text(stringResource(R.string.save_amount_on_order, 50), style = MaterialTheme.typography.bodySmall, color = Color(0xFFFFD54F).copy(alpha = 0.7f))
+                Text(stringResource(R.string.redeem_loyalty_points, 500), fontWeight = FontWeight.Bold, style = MaterialTheme.typography.bodyMedium, color = Color(0xFF5D4037))
+                Text(stringResource(R.string.save_amount_on_order, 50), style = MaterialTheme.typography.bodySmall, color = Color(0xFF795548))
             }
             Switch(
                 checked = usePoints, 
                 onCheckedChange = onToggle,
-                colors = SwitchDefaults.colors(checkedThumbColor = Color(0xFFFFD54F))
+                colors = SwitchDefaults.colors(checkedThumbColor = Color(0xFFFFA000))
             )
         }
     }

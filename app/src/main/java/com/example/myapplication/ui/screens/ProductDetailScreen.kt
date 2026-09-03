@@ -158,13 +158,13 @@ fun ProductDetailScreen(
                         modifier = Modifier.weight(1f)
                     )
                     Surface(
-                        color = Color(0xFFFFF9C4).copy(alpha = 0.2f),
+                        color = Color(0xFFFFF9C4),
                         shape = RoundedCornerShape(4.dp),
                         border = androidx.compose.foundation.BorderStroke(0.5.dp, Color(0xFFFBC02D))
                     ) {
                         Row(modifier = Modifier.padding(4.dp), verticalAlignment = Alignment.CenterVertically) {
-                            Text("${product.rating}", fontWeight = FontWeight.Bold, fontSize = 12.sp, color = Color(0xFFFBC02D))
-                            Icon(Icons.Default.Star, null, tint = Color(0xFFFBC02D), modifier = Modifier.size(14.dp))
+                            Text("${product.rating}", fontWeight = FontWeight.Bold, fontSize = 12.sp, color = Color(0xFFF57F17))
+                            Icon(Icons.Default.Star, null, tint = Color(0xFFF57F17), modifier = Modifier.size(14.dp))
                         }
                     }
                 }

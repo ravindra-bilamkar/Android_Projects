@@ -300,17 +300,17 @@ fun GiftHamperBanner(onClick: () -> Unit) {
         onClick = onClick,
         modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
         colors = CardDefaults.cardColors(
-            containerColor = Color(0xFF2D1B22), // Darker Pink variant for dark mode
-            contentColor = Color(0xFFFDEEF4)
+            containerColor = Color(0xFFFDEEF4),
+            contentColor = Color(0xFF2E1B22)
         ),
         shape = RoundedCornerShape(16.dp)
     ) {
         Row(modifier = Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(modifier = Modifier.weight(1f)) {
-                Text(stringResource(R.string.customize_gift), style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Bold, color = Color(0xFFFF4081))
-                Text(stringResource(R.string.pick_box_goodies), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text(stringResource(R.string.customize_gift), style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Bold, color = Color(0xFFD81B60))
+                Text(stringResource(R.string.pick_box_goodies), style = MaterialTheme.typography.bodySmall, color = Color(0xFF5D4037))
             }
-            Icon(Icons.Default.Add, contentDescription = null, tint = Color(0xFFFF4081))
+            Icon(Icons.Default.Add, contentDescription = null, tint = Color(0xFFD81B60))
         }
     }
 }
@@ -321,17 +321,17 @@ fun CustomMixBanner(onClick: () -> Unit) {
         onClick = onClick,
         modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
         colors = CardDefaults.cardColors(
-            containerColor = Color(0xFF1B2D1C), // Darker Green variant for dark mode
-            contentColor = Color(0xFFE8F5E9)
+            containerColor = Color(0xFFE8F5E9),
+            contentColor = Color(0xFF1B2D1C)
         ),
         shape = RoundedCornerShape(16.dp)
     ) {
         Row(modifier = Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(modifier = Modifier.weight(1f)) {
-                Text(stringResource(R.string.build_your_own_mix), style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Bold, color = Color(0xFF4CAF50))
-                Text(stringResource(R.string.mix_ingredients), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text(stringResource(R.string.build_your_own_mix), style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Bold, color = Color(0xFF2E7D32))
+                Text(stringResource(R.string.mix_ingredients), style = MaterialTheme.typography.bodySmall, color = Color(0xFF37474F))
             }
-            Icon(Icons.Default.Refresh, contentDescription = null, tint = Color(0xFF4CAF50))
+            Icon(Icons.Default.Refresh, contentDescription = null, tint = Color(0xFF2E7D32))
         }
     }
 }
@@ -360,7 +360,7 @@ fun HeroBanner() {
         ) {
             Text(
                 text = stringResource(R.string.mins_delivery),
-                color = MaterialTheme.colorScheme.tertiary, // Use Zepto Green
+                color = MaterialTheme.colorScheme.tertiary, // Accent Green
                 style = MaterialTheme.typography.labelSmall,
                 fontWeight = FontWeight.ExtraBold
             )
