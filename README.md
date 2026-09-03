@@ -7,7 +7,7 @@ An ultra-fast, modern, and adaptive Android application for purchasing organic d
 ## 🌟 Key Features
 
 ### 🛒 Customer Experience & Shopping
-- **Zepto-Inspired Fast UI**: Pure Dark Mode UI, high-contrast typography, and a sticky bottom cart bar for quick checkout.
+- **10 Min Delivery App Inspired Fast UI**: Pure Dark Mode UI, high-contrast typography, and a sticky bottom cart bar for quick checkout.
 - **Rich Product Catalog**: Handpicked Almonds, Cashews, Pistachios, Walnuts, Figs, Prunes, Apricots, Berries, Seeds, and Fresh Flours (Sharbati Wheat, Jowar, Bajra).
 - **Weight Variants**: Flexible weight options (`100gm`, `200gm`, `250gm`, `500gm`, `750gm`, `1kg`) with dynamic price scaling.
 - **Interactive Product Details**: Sourcing stories, nutritional tables, allergen warnings, customer reviews, and stock alerts (*Only few left!*).
